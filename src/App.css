@@ -1,38 +1,104 @@
-.App {
+body{
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+.main_div{
+   width:100%;
+   height:100vh;
+   background: #fcf5c7;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   text-align: center;  
+}
+.center_div{
+  width:25%;
+  height:80vh;
+  background-color:#adf7b6;
+  box-shadow: 10px 10px 5px 5px rgba(0,0,0,0.3);
+  border-radius: 15px;
+}
+h1{
+  color:#adf7b6;
+  background-color:#fb6f92;
+  padding:6px 0 2px 0;
+  margin-bottom:10px;
+  box-shadow:5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+input{
   text-align: center;
+  background-color: #adf7b6;
+  color:#fb6f92;
+  outline: none;
+  height:30px;
+  border:none;
+  font-size:20px;
+  font-weight: bolder;
+  width:60%;
+  border-bottom: 2px solid #fb6f92;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+  height:50px;
+  width:50px;
+  border-radius: 50px;
+  background-color: #fb6f92;
+  color:#adf7b6;
+  border-color: transparent;
+  outline: none;
+  font-size: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.3);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ol{
+  margin-top:3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li{
+  padding-left:0px;
+  text-align:left;
+  font-size:20px;
+  font-weight:bolder;
+  min-height:40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  color:#fb6f92;
+  text-transform: capitalize;
+}
+.todo_style{
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style .fa-times{
+  width:20px;
+  height:20px;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  background-color:#fb6f92;
+  border-radius:50%;
+  margin:0px 15px 0 35px;
+  color:#adf7b6;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(max-width:768px){
+  .center_div{
+    width:55%;
   }
-  to {
-    transform: rotate(360deg);
+  .todo_style .fa-times{
+    margin:0 15px 0 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    margin-left:5px;
+    min-height: 40px;
+    width:40px;
+    font-size: 30px;
   }
 }
